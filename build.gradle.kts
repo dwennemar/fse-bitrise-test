@@ -74,7 +74,7 @@ allprojects {
             trimTrailingWhitespace()
             indentWithSpaces()
             endWithNewline()
-            ktlint("0.41.0").userData(mapOf("disabled_rules" to "no-wildcard-imports"))
+            ktlint("0.48.2").userData(mapOf("disabled_rules" to "no-wildcard-imports"))
         }
     }
 }
