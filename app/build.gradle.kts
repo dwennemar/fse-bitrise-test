@@ -100,7 +100,7 @@ dependencies {
     implementation("androidx.room:room-runtime:2.5.1")
     kapt("androidx.room:room-compiler:2.5.1")
 
-    kapt("org.xerial:sqlite-jdbc:3.36.0.3")
+    kapt("org.xerial:sqlite-jdbc:3.41.2.1")
 
     // Kotlin Extensions and Coroutines support for Room
     implementation("androidx.room:room-ktx:2.3.0")
