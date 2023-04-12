@@ -116,7 +116,7 @@ dependencies {
 
     // activity & fragment ktx
     implementation("androidx.fragment:fragment-ktx:1.5.6")
-    implementation("androidx.activity:activity-ktx:1.4.0-rc01")
+    implementation("androidx.activity:activity-ktx:1.8.0-alpha02")
     implementation("androidx.appcompat:appcompat:1.4.0-beta01")
 
     // Navigation Components
