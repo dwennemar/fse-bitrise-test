@@ -740,14 +740,8 @@ ij_xml_block_comment_at_first_column = true
 ij_xml_keep_indents_on_empty_lines = false
 ij_xml_line_comment_at_first_column = true
 ij_xml_use_custom_settings = true
-ij_continuation_indent_size = 4
-ij_xml_block_comment_at_first_column = true
-ij_xml_keep_indents_on_empty_lines = false
-ij_xml_line_comment_at_first_column = true
-ij_xml_use_custom_settings = true
 
 [{*.kt, *.kts}]
-disabled_rules = no-wildcard-imports, import-ordering
 ij_kotlin_align_in_columns_case_branch = false
 ij_kotlin_align_multiline_binary_operation = false
 ij_kotlin_align_multiline_extends_list = false
