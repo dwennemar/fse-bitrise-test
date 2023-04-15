@@ -37,7 +37,7 @@ plugins {
 
 android {
     compileSdk = 33
-    buildToolsVersion = "34.0.0 rc2"
+    buildToolsVersion = "34.0.0 rc3"
     namespace = "thecodemonks.org.nottzapp"
 
     defaultConfig {
