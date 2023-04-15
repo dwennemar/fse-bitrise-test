@@ -9,8 +9,10 @@ app:
   envs:
   - opts:
       is_expand: false
-  - PROJECT_LOCATION: "."
-  - MODULE: app
+    PROJECT_LOCATION: "."
+  - opts:
+      is_expand: false
+    MODULE: app
   - ANDROID_HOME: $ANDROID_HOME
 workflows:
   deploy:
@@ -23,6 +25,9 @@ workflows:
     steps:
     - activate-ssh-key@4: {}
     - git-clone@8: {}
+    - set-java-version@1:
+        inputs:
+          - set_java_version: "17"
     - cache-pull@2: {}
     - install-missing-android-tools@3:
         inputs:
