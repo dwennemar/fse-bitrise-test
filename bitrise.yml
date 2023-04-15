@@ -5,7 +5,6 @@ app:
   envs:
   - PROJECT_LOCATION: .
   - MODULE: app
-#  - VARIANT: app
   - ANDROID_HOME: $ANDROID_HOME
 workflows:
   deploy:
@@ -16,7 +15,7 @@ workflows:
       - Check out [Getting started with Android apps](https://devcenter.bitrise.io/en/getting-started/getting-started-with-android-apps.html) for signing and deployment options.
       - [Set up code signing with *Android Sign* Step](https://devcenter.bitrise.io/en/code-signing/android-code-signing/android-code-signing-using-the-android-sign-step.html).
     steps:
-    - git-clone@7: {}
+    - git-clone@8: {}
     - cache-pull@2: {}
     - install-missing-android-tools@3:
         inputs:
@@ -48,7 +47,10 @@ workflows:
       Next steps:
       - Check out [Getting started with Android apps](https://devcenter.bitrise.io/en/getting-started/getting-started-with-android-apps.html).
     steps:
-    - git-clone@7: {}
+    - git-clone@8: {}
+    - set-java-version@1:
+        inputs:
+        - set_java_version: "17"
     - cache-pull@2: {}
     - install-missing-android-tools@3:
         inputs:
