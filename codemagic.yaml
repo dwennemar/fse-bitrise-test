@@ -1,6 +1,6 @@
 workflows:
   my-workflow:
-    instance_type: linux
+#    instance_type: linux
     environment:
       java: 17
     cache:
