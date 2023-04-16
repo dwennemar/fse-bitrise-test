@@ -2,7 +2,7 @@ workflows:
   my-workflow:
 #    instance_type: linux
     environment:
-      java: 17
+      java: 19.0.2
     cache:
       cache_paths:
         - $HOME/.gradle/caches
