@@ -9,5 +9,4 @@ workflows:
     scripts:
       - name: Run unit tests
         script: ./gradlew test
-        test_report: app/build/**/*.xml
-
+        test_report: app/build/test-results/**/*.xml
