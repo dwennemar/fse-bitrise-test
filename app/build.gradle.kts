@@ -37,6 +37,8 @@ plugins {
     id("dagger.hilt.android.plugin")
 }
 
+project.setProperty("testResultsDirName", "$buildDir/junit-xml")
+
 android {
     compileSdk = 33
     buildToolsVersion = "34.0.0 rc3"
@@ -150,6 +152,15 @@ tasks.withType<KotlinCompile>().configureEach {
     }
 }
 
+
 tasks.withType<Test>() {
     useJUnitPlatform()
+    testLogging {
+        events("passed")
+    }
+    reports.html.required.set(false)
+
+    reports {
+        junitXml.outputLocation.set(layout.buildDirectory.dir("test-junit-xml"))
+    }
 }
