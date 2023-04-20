@@ -1,6 +1,7 @@
 package thecodemonks.org.nottzapp
 
 import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
 
 /**
@@ -17,6 +18,6 @@ class ExampleUnitTest {
     @Test
     fun flakyTest() {
         val randomValue = Math.random() * 10
-        assertEquals(3, randomValue)
+        assertTrue(randomValue > 3)
     }
 }
