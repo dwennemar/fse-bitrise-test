@@ -13,4 +13,10 @@ class ExampleUnitTest {
     fun addition_isCorrect() {
         assertEquals(4, 2 + 2)
     }
+
+    @Test‚
+    fun flakyTest() {
+        val randomValue = Math.random() * 10
+        assertEquals(3, randomValue)
+    }
 }
