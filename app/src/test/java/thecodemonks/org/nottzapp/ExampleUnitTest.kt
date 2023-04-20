@@ -14,7 +14,7 @@ class ExampleUnitTest {
         assertEquals(4, 2 + 2)
     }
 
-    @Test‚
+    @Test
     fun flakyTest() {
         val randomValue = Math.random() * 10
         assertEquals(3, randomValue)
